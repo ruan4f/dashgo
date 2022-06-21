@@ -1,6 +1,7 @@
 import { Box, Button, Checkbox, Flex, Heading, Icon, Table, Tbody, Td, Text, Th, Thead, Tr } from "@chakra-ui/react";
 import { RiAddLine, RiPencilLine } from "react-icons/ri";
 import { Header } from "../../components/Header";
+import { Pagination } from "../../components/Pagination";
 import { Sidebar } from "../../components/Sidebar";
 
 export default function UserList() {
@@ -23,7 +24,7 @@ export default function UserList() {
               <Thead>
                 <Tr>
                   <Th px='6' color='gray.300' width='8'>
-                    <Checkbox colorScheme='pink'/>
+                    <Checkbox colorScheme='pink' />
                   </Th>
                   <Th>Usuário</Th>
                   <Th>Data de cadastro</Th>
@@ -33,7 +34,7 @@ export default function UserList() {
               <Tbody>
                 <Tr>
                   <Td px='6' color='gray.300' width='8'>
-                    <Checkbox colorScheme='pink'/>
+                    <Checkbox colorScheme='pink' />
                   </Td>
                   <Td>
                     <Box>
@@ -43,12 +44,12 @@ export default function UserList() {
                   </Td>
                   <Td>04 de Abril, 2021</Td>
                   <Td>
-                    <Button as='a' size='sm' fontSize='sm' colorScheme='purple' leftIcon={<Icon as={RiPencilLine} fontSize='16'/>} >Editar</Button>
+                    <Button as='a' size='sm' fontSize='sm' colorScheme='purple' leftIcon={<Icon as={RiPencilLine} fontSize='16' />} >Editar</Button>
                   </Td>
                 </Tr>
                 <Tr>
                   <Td px='6' color='gray.300' width='8'>
-                    <Checkbox colorScheme='pink'/>
+                    <Checkbox colorScheme='pink' />
                   </Td>
                   <Td>
                     <Box>
@@ -58,11 +59,13 @@ export default function UserList() {
                   </Td>
                   <Td>04 de Abril, 2021</Td>
                   <Td>
-                    <Button as='a' size='sm' fontSize='sm' colorScheme='purple' leftIcon={<Icon as={RiPencilLine} fontSize='16'/>} >Editar</Button>
+                    <Button as='a' size='sm' fontSize='sm' colorScheme='purple' leftIcon={<Icon as={RiPencilLine} fontSize='16' />} >Editar</Button>
                   </Td>
                 </Tr>
               </Tbody>
             </Table>
+
+            <Pagination />
           </Box>
         </Flex>
       </Flex>
