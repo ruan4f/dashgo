@@ -10,6 +10,10 @@ const Chart = dynamic(() => import("react-apexcharts"), {
 
 const options = {
   chart: {
+    //redrawOnParentResize: true,
+    responsive: {
+      enabled: true
+    },
     toolbar: {
       show: false
     },
@@ -26,6 +30,9 @@ const options = {
   },
   tooltip: {
     enabled: false
+  },
+  stroke: {
+    curve: 'smooth'
   },
   xaxis: {
     type: "datetime",
