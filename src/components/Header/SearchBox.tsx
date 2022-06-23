@@ -10,7 +10,7 @@ export function SearchBox() {
   //debounce
   //Imperativa vs Declarativa
 
-  console.log(searchInputRef.current.value);
+  console.log(searchInputRef.current?.value);
   
   return (
     <Flex
