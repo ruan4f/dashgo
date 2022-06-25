@@ -34,7 +34,7 @@ export default function SignIn() {
             type='email'
             label='E-mail'
             error={errors.email}
-            {...register("email", { required: 'E-mail obrigatório' })}
+            {...register("email")}
           />
           <Input
             name='password'
